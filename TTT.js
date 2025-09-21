@@ -53,6 +53,7 @@ const checkWin = () =>{
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, the winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    boxes.forEach(box => box.disabled = true);
 }
 
 resetBtn.addEventListener('click',()=>{
